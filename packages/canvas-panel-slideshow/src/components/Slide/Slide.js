@@ -38,7 +38,7 @@ class Slide extends Component {
             {({ label, body, attributionLabel, attribution }) => (
               <div className={bem.element('overlay')}>
                 <div className={bem.element('overlay-content')}>
-                  {label ? (
+                  {label && label != '' ? (
                     <h3 className={bem.element('title')}>{label}</h3>
                   ) : null}
                   {body ? <p className={bem.element('text')}>{body}</p> : null}
